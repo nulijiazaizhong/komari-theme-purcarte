@@ -25,6 +25,14 @@ export interface ConfigOptions {
   enableSearchButton: boolean; // 是否启用搜索按钮
   enableAdminButton: boolean; // 是否启用管理员按钮
   selectedFooterStyle: FooterStyle; // 页脚样式
+  enableIcpRecord: boolean; // 是否启用ICP备案显示
+  icpRecordNumber: string; // ICP备案号
+  icpRecordLink: string; // ICP备案查询链接
+  enablePublicSecurityRecord: boolean; // 是否启用公网安备显示
+  publicSecurityRecordNumber: string; // 公安备案号
+  publicSecurityRecordLink: string; // 公安备案查询链接
+  enableSiteRuntime: boolean; // 是否启用站点运行时间显示
+  siteStartTime: string; // 站点启动时间
   enableJsonRPC2Api: boolean; // 是否启用 JSON-RPC2 API 适配
   isShowStatsInHeader: boolean; // 是否在标题栏中显示统计信息
   mergeGroupsWithStats: boolean; // 是否在统计栏中合并分组
@@ -76,6 +84,14 @@ export const DEFAULT_CONFIG: ConfigOptions = {
   enableSearchButton: true,
   enableAdminButton: true,
   selectedFooterStyle: "fixed",
+  enableIcpRecord: false,
+  icpRecordNumber: "",
+  icpRecordLink: "https://beian.miit.gov.cn/",
+  enablePublicSecurityRecord: false,
+  publicSecurityRecordNumber: "",
+  publicSecurityRecordLink: "",
+  enableSiteRuntime: false,
+  siteStartTime: "",
   enableJsonRPC2Api: false,
   isShowStatsInHeader: false,
   mergeGroupsWithStats: false,

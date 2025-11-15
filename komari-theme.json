@@ -1,9 +1,9 @@
 {
-    "name": "Komari Theme PurCart",
-    "short": "PurCarte",
+    "name": "Komari Theme PurCart wanan",
+    "short": "PurCartewanan",
     "description": "A frosted glass theme for Komari",
     "version": "tags:VERSION",
-    "author": "Montia & Gemini",
+    "author": "Montia & Gemini & Wanan",
     "url": "https://github.com/Montia37/Komari-theme-purcarte",
     "preview": "preview.png",
     "configuration": {
@@ -216,6 +216,66 @@
                 "options": "fixed,levitation,followContent,hidden",
                 "default": "fixed",
                 "help": "设置底栏样式为 fixed（固定）, levitation（悬浮）, followContent（跟随内容）或 hidden（隐藏）"
+            },
+            {
+                "name": "备案与运行时间",
+                "type": "title"
+            },
+            {
+                "key": "enableIcpRecord",
+                "name": "启用ICP备案信息显示",
+                "type": "switch",
+                "default": false,
+                "help": "在底栏显示ICP备案号，并支持跳转到工信部备案查询"
+            },
+            {
+                "key": "icpRecordNumber",
+                "name": "ICP备案号",
+                "type": "string",
+                "default": "",
+                "help": "例如：粤ICP备XXXXXX号"
+            },
+            {
+                "key": "icpRecordLink",
+                "name": "ICP备案查询链接",
+                "type": "string",
+                "default": "https://beian.miit.gov.cn/",
+                "help": "默认跳转至工信部备案查询主页，可按需修改"
+            },
+            {
+                "key": "enablePublicSecurityRecord",
+                "name": "启用公网安备信息显示",
+                "type": "switch",
+                "default": false,
+                "help": "在底栏显示公安备案号，并支持跳转到公安备案查询"
+            },
+            {
+                "key": "publicSecurityRecordNumber",
+                "name": "公网安备号",
+                "type": "string",
+                "default": "",
+                "help": "例如：粤公网安备XXXXXX号"
+            },
+            {
+                "key": "publicSecurityRecordLink",
+                "name": "公网安备查询链接",
+                "type": "string",
+                "default": "",
+                "help": "留空将自动使用 https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=编号"
+            },
+            {
+                "key": "enableSiteRuntime",
+                "name": "启用站点运行时间显示",
+                "type": "switch",
+                "default": false,
+                "help": "在底栏显示站点已运行的时间"
+            },
+            {
+                "key": "siteStartTime",
+                "name": "站点启动时间",
+                "type": "string",
+                "default": "",
+                "help": "建议格式：YYYY-MM-DD HH:mm:ss 或 ISO 日期字符串"
             },
             {
                 "name": "内容设置",
